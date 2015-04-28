@@ -16,8 +16,7 @@
     "sanitizer",
     "html sanitizer",
     "simple",
-    "client sanitizer",
-
+    "client sanitizer"
   ],
   "author": "Dor Tzur",
   "license": "MIT",
