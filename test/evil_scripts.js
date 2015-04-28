@@ -1,8 +1,4 @@
 describe('evil script protection', function () {
-    //var chai = require('chai');
-    //var should = chai.should();
-    //chai.use(require('chai-string'));
-    //var sanitizer = require('../sanitizer');
 
     it("should sanitize basic script tags", function () {
         sanitizer.sanitizeHTML("<script>alert('owned')</script>").should.be.equal("");;
