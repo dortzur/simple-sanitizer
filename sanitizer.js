@@ -580,7 +580,7 @@
 
     }
 
-    var $$sanitizeUri = new $$SanitizeUriProvider();
+    var $$sanitizeUri = new $$SanitizeUriProvider().sanitizeUri;
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
      *     Any commits to this file should be reviewed with security in mind.  *

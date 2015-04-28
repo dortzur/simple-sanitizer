@@ -9,7 +9,7 @@ module.exports = function (config) {
             '*.js'
         ],
         preprocessors : {
-            '*.js': ['coverage']
+            'sanitizer.js': ['progress','coverage']
         },
         reporters: ['progress', 'coverage'],
         coverageReporter : {
