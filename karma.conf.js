@@ -9,12 +9,12 @@ module.exports = function (config) {
             '*.js'
         ],
         preprocessors : {
-            '*.js': 'coverage'
+            '*.js': ['coverage']
         },
         reporters: ['progress', 'coverage'],
         coverageReporter : {
             type : 'lcov',
-            dir : 'coverage'
+            dir : 'coverage/'
         }
     });
 };
