@@ -1,10 +1,10 @@
 {
   "name": "simple-sanitizer",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "A small quick and effective client side javascript html sanitizer.",
   "main": "sanitizer.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start ./karma.conf.js"
+    "test": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
