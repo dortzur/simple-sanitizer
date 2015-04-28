@@ -1,6 +1,7 @@
 # Simple Sanitizer
 A small, quick, standalone and effective client side javascript html sanitizer.
-A shameless port of ngSanitize to normal javascript, zero dependencies required.
+
+A shameless port of [ngSanitize](https://docs.angularjs.org/api/ngSanitize) to normal javascript, zero dependencies required.
 
 ## Usage
 
