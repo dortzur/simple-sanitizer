@@ -1,4 +1,20 @@
-(function () {
+// if the module has no dependencies, the above pattern can be simplified to
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define([], factory);
+    } else if (typeof exports === 'object') {
+        // Node. Does not work with strict CommonJS, but
+        // only CommonJS-like environments that support module.exports,
+        // like Node.
+        module.exports = factory();
+    } else {
+        // Browser globals (root is window)
+        root.sanitizer = factory();
+    }
+}(this, function () {
+
+
     'use strict';
 
     function _lowercase(string) {
@@ -373,6 +389,7 @@
     }
 
     function msieversion() {
+        if(typeof window =="undefined") return false;
         var ua = window.navigator.userAgent;
         var msie = ua.indexOf("MSIE ");
 
@@ -398,8 +415,10 @@
 // doesn't know about mocked locations and resolves URLs to the real document - which is
 // exactly the behavior needed here.  There is little value is mocking these out for this
 // service.
-    var urlParsingNode = document.createElement("a");
-    var originUrl = urlResolve(window.location.href);
+
+        var urlParsingNode = document.createElement("a");
+        var originUrl = urlResolve(window.location.href);
+
 
 
     /**
@@ -1093,14 +1112,5 @@
     var NODE_TYPE_DOCUMENT = 9;
     var NODE_TYPE_DOCUMENT_FRAGMENT = 11;
 
-    var sanitizer = _extend({}, new $$SanitizeUriProvider(), new $SanitizeProvider());
-
-    if (window) {
-        window.sanitizer = sanitizer;
-    } else {
-        //node assumed
-        module.exports = sanitizer;
-    }
-
-
-})();
+    return _extend({}, new $$SanitizeUriProvider(), new $SanitizeProvider());
+}));
