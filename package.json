@@ -1,0 +1,39 @@
+{
+  "name": "simple-sanitizer",
+  "version": "0.4.1",
+  "description": "A small quick and effective client side javascript sanitizer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dortzur/simple-sanitizer.git"
+  },
+  "keywords": [
+    "sanitize",
+    "sanitizer",
+    "html sanitizer",
+    "simple",
+    "client sanitizer",
+
+  ],
+  "author": "Dor Tzur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dortzur/simple-sanitizer/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/dortzur/simple-sanitizer",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "chai-string": "^1.1.0",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.1"
+  },
+  "dependencies": {}
+}
