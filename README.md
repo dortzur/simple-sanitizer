@@ -20,3 +20,7 @@ You can also sanitize URIs for images, links etc:
 ## License
 
 MIT, see [LICENSE](https://github.com/dortzur/simple-sanitizer/blob/master/LICENSE) for details.
+
+## Sponsors
+
+Proudly sponsored by [The Full Stack](http://thefullstack.xyz)
